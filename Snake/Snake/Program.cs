@@ -12,6 +12,8 @@ namespace Snake
             var horizantalLine = new HorizantalLine(5, 10, 8, '+');
             horizantalLine.Drow();
 
+            // Наследование 
+            new Employee {Age = 42, Pay = 300000};
             Console.ReadLine();
         }
     }
