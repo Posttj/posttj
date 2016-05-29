@@ -1,31 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Snake
 {
-    class HorizantalLine
+    class HorizantalLine:Figure
     {
-        private readonly List<Point> _pList;
+        //private readonly List<Point> _pList;
 
         public HorizantalLine(int xLeft, int xRight, int y, char sym)
         {
-            _pList = new List<Point>();
+            PList = new List<Point>();
             for (var x = xLeft; x < xRight; x++)
             {
                 var p = new Point(x, y, sym);
-                _pList.Add(p);
+                PList.Add(p);
             }
         }
 
-        public void Drow()
-        {
-            foreach (var point in _pList)
-            {
-                point.Draw();
-            }
-        }
+        //public void Drow()
+        //{
+        //    foreach (var point in _pList)
+        //    {
+        //        point.Draw();
+        //    }
+        //}
     }
 }
