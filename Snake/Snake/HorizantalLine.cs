@@ -2,7 +2,7 @@
 
 namespace Snake
 {
-    class HorizantalLine:Figure
+    class HorizantalLine : Figure
     {
         //private readonly List<Point> _pList;
 
